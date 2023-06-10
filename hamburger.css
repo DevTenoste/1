@@ -58,7 +58,7 @@ input[type="checkbox"] {
   }
   
   nav#menu ul li a {
-    font-family: poppins, sans-serif;
+    font-family: sans-serif ;
     color: #ffffff;
     text-decoration: none;
     font-size: 20px;
@@ -94,7 +94,7 @@ input[type="checkbox"] {
     left: 0px;
     height: 3px;
   
-    background: aqua;
+    background: rgb(177, 179, 179);
     
   
   }
@@ -110,15 +110,18 @@ input[type="checkbox"] {
     content: '';
     display: block;
     position: absolute;
-    bottom: 2px;
+    bottom: -1px;
     width: 0%;
     left: 0px;
-    height: 4px;
+    height: 3px;
     transition: 0.33s cubic-bezier(0.72,-0.01, 0.19, 0.92);
-    background: aqua;
+    background: rgb(93, 169, 255);
   
   }
 
   #menu-toggle{
     display: none;
   }
+
+
+  

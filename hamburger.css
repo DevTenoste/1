@@ -5,8 +5,11 @@ body{
     text-decoration: underline;
 }
 
-
-
+#2{
+color: #ec1212;
+font-weight: 900;
+font-size: 32px;
+}
 
 
 
@@ -15,9 +18,9 @@ input[type="checkbox"] {
     position: relative;
     top: -9999px;
     left: -9999px;
-  }
+}
   
-  label#menu-icon {
+label#menu-icon {
     position: relative;
     top: -55px;
     margin-left: 1200px;
@@ -26,9 +29,9 @@ input[type="checkbox"] {
     cursor: pointer;
     font-size: 20px;
     z-index: 2;
-  }
+ }
   
-  nav#menu {
+nav#menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -37,9 +40,9 @@ input[type="checkbox"] {
     background-color: #333333;
     transform: translateX(100%) translateY(-100%);
     transition: transform 0.4s ease-in-out;
-  }
+}
   
-  nav#menu ul {
+nav#menu ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -50,14 +53,14 @@ input[type="checkbox"] {
     font-family: poppins,sans-serif;
   
     
-  }
+}
   
-  nav#menu ul li {
+nav#menu ul li {
     margin: 10px;
     text-align: center;
-  }
+}
   
-  nav#menu ul li a {
+nav#menu ul li a {
     font-family: poppins, sans-serif;
     color: #ffffff;
     text-decoration: none;
@@ -65,30 +68,28 @@ input[type="checkbox"] {
     background: none;
     display: inline;
   position: relative;
+}
   
-  
-  }
-  
-  input[type="checkbox"]:checked ~ nav#menu {
+input[type="checkbox"]:checked ~ nav#menu {
     transform: translateX(0);
-  }
+}
   
-  input[type="checkbox"]:checked ~ label#menu-icon {
+input[type="checkbox"]:checked ~ label#menu-icon {
     color: #ffffff;
-  }
+}
   
       
-  a {
+a {
   
     display: inline;
     position: relative;
     color: #E46161;
     text-decoration: none;
     transition: transform 0.5s; 
-  }
+}
   
   
-  a:hover {
+a:hover {
   bottom: 2px;
   transition: transform 0.3s;
     left: 0px;
@@ -97,16 +98,16 @@ input[type="checkbox"] {
     background: aqua;
     
   
-  }
+}
   
   
-  a:hover:after {
+a:hover:after {
     width: 100%;
     
-  }
+}
   
   
-  a:after {
+a:after {
     content: '';
     display: block;
     position: absolute;
@@ -117,8 +118,8 @@ input[type="checkbox"] {
     transition: 0.33s cubic-bezier(0.72,-0.01, 0.19, 0.92);
     background: aqua;
   
-  }
+}
 
-  #menu-toggle{
-    display: none;
-  }
+#menu-toggle{
+   display: none;
+}

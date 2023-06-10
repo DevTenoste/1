@@ -3,13 +3,31 @@ margin: 0;
 padding: 0;    
 }
 
+#s{
+  color: #7acfcb;
+  font-weight: 900;
+  font-size: 32px;
+  font-family: fantasy;
+  padding-bottom: -900px;
+}
+
+@font-face {
+	font-family: 'Minecraft';
+	src: url("./minecraft.ttf") format("truetype")
+}
+
+#s:hover{
+  color: #7acfcb;
+  font-weight: 800;
+  text-decoration: wavy;
+  font-family: 'Minecraft';
+}
+
 
 
 h1{
         text-align: center;
         text-decoration: underline;
-
-
 }
 
 
@@ -20,26 +38,49 @@ body{
 
 }
 
-
-
-
 input[type="checkbox"] {
     position: relative;
     top: -9999px;
     left: -9999px;
-  }
-  
-  label#menu-icon {
+}
+
+img{
+height: 25px;
+width: 25px;
+}
+
+label#menu-icon {
     position: relative;
     top: -10px;
     margin-left: 1200px;
-    display: inline-block;
-    padding: 10px;
+    display:run-in;
+    /* padding: 10px; */
     cursor: pointer;
+    color: wheat;
     font-size: 20px;
     z-index: 2;
   }
-  
+
+  label#menu-icon2 {
+    position: relative;
+    top: -10px;
+    opacity: 0;
+    margin-left: 1210px;
+    margin-top: -500px;
+    padding-top: -100px;
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    color: wheat;
+    font-size: 20px;
+    z-index: 2;
+  }
+
+label#menu-icon2::after {
+  opacity: 1;
+}
+
+
   nav#menu {
     position: fixed;
     top: 0;
@@ -54,44 +95,54 @@ input[type="checkbox"] {
   nav#menu ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin-top: -100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
     font-family: poppins,sans-serif;
-  
-    
+
   }
   
   nav#menu ul li {
-    margin: 10px;
+    margin: 25px;
     text-align: center;
   }
   
   nav#menu ul li a {
     font-family: poppins, sans-serif;
-    color: #ffffff;
+    color: #6dd3c2;
     text-decoration: none;
     font-size: 20px;
     background: none;
     display: inline;
   position: relative;
-  
-  
+  }
+  #menu-icon{
+    position: sticky;
   }
   
+  #menu-icon2{
+    top: 5px;
+    right: 5px;
+  }
+
   input[type="checkbox"]:checked ~ nav#menu {
     transform: translateX(0);
   }
   
   input[type="checkbox"]:checked ~ label#menu-icon {
-    color: #ffffff;
+    color: #7acfcb;
+    opacity: 0;
   }
-  
+  input[type="checkbox"]:checked ~ label#menu-icon2 {
+    opacity: 1;
+    top: 5px;
+    color: #7acfcb;
+  }
+
       
   a {
-  
     display: inline;
     position: relative;
     color: #E46161;
@@ -103,18 +154,14 @@ input[type="checkbox"] {
   a:hover {
   bottom: 2px;
   transition: transform 0.3s;
-    left: 0px;
-    height: 3px;
-  
-    background: aqua;
-    
-  
+   left: 0px;
+   height: 2px;
+   background: #7acfcb;
   }
   
   
   a:hover:after {
     width: 100%;
-    
   }
   
   
@@ -125,8 +172,7 @@ input[type="checkbox"] {
     bottom: 2px;
     width: 0%;
     left: 0px;
-    height: 4px;
+    height: 2px;
     transition: 0.33s cubic-bezier(0.72,-0.01, 0.19, 0.92);
-    background: aqua;
-  
+    background: #7acfcb;
   }
